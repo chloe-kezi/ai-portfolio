@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 44 33% 98%;
+  --foreground: 224 20% 10%;
+  --card: 0 0% 100%;
+  --card-foreground: 224 20% 10%;
+  --border: 220 16% 88%;
+  --muted: 220 18% 94%;
+  --muted-foreground: 224 10% 42%;
+  --accent: 178 39% 38%;
+  --accent-foreground: 0 0% 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 18% 8%, rgba(31, 122, 118, 0.12), transparent 26rem),
+    radial-gradient(circle at 78% 0%, rgba(80, 93, 128, 0.12), transparent 24rem),
+    hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+::selection {
+  background: rgba(31, 122, 118, 0.18);
+}
+
+.glass-line {
+  background:
+    linear-gradient(90deg, transparent, rgba(31, 122, 118, 0.22), transparent),
+    linear-gradient(90deg, rgba(16, 24, 40, 0.04), rgba(16, 24, 40, 0.02));
+}
